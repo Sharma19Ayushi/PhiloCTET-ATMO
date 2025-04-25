@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 
 ## Relative risks
+"These are predefined relative risk (RR) values used to estimate health impacts of air pollution exposure (PM₂.₅ or NO₂)"
 RR_PM25 = 1.15      #1.15
 RR_PM25_high = 1.25
 RR_PM25_low = 1.05
