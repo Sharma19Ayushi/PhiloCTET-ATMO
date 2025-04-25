@@ -1,11 +1,7 @@
 **Project Overview (PhiloCTET-ATMO)**
--Project Objectives: 1. To model air pollution concentrations in various low-carbon scenarios.
-                     2. To evaluate corresponding health impacts, focusing on PM2.5 and NO2 pollutants.
--Transition Scenarios: Developed by ADEME, these include: S1: Frugality-based reductions, S2: Collaborative territorial strategies, S3: Tech-driven approaches, S4: Reparative solutions relying on emerging technologies.
--Methods Used: 1. Estimation of pollutant concentrations using SHERPA and CHIMERE models.
-               2. Health indicators creation based on pollution and demographic data.
-               3. Scenario analysis to compare outcomes by 2030 and 2050    
-- Importance: This project emphasizes the role of integrating health benefits into public decision-making for climate policies and aims to enhance commitment to achieving carbon neutrality in France.
+The project aims to assess the health impacts of air quality in France by the year 2050, under various future decarbonization strategies. These strategies are outlined in four carbon neutrality scenarios published by ADEME in 2021 as part of its foresight project “Transition(s)” (https://www.ademe.fr/les-futurs-en-transition/). Based on projected changes in national emissions of major air pollutants under each scenario, a summary table was developed showing emission reduction targets for 2030 and 2050 relative to 2019.
+  Next, pollutant concentrations in the atmosphere are estimated assuming a uniform spatial distribution of emission reductions across France. This step uses the SHERPA model, developed by the European Commission’s Joint Research Center, which is specifically designed to support the planning and evaluation of regional air quality strategies. Finally, the health impacts of the ADEME scenarios are quantified using the Health Impact Assessment (HIA) method. This involves applying concentration–response functions for specific pollutants. The pollutant concentrations estimated by SHERPA are matched with spatial pollutant data from INSEE, at the IRIS, municipality, or departmental level. Health benefits, particularly in terms of reduced mortality, are then calculated using established concentration–response relationships (Pascal et al., 2013; Pascal et al., 2016; Adelaide et al., 2021)  
+**Importance: **This project emphasizes the role of integrating health benefits into public decision-making for climate policies and aims to enhance commitment to achieving carbon neutrality in France.
 
 **Description of Python Modules :**
 **1. Population Module :** This function processes and prepares demographic, geospatial, and mortality data for further analysis and visualization. It integrates several key steps to clean, aggregate, and merge data from multiple input sources and outputs a structured dataset in the form of geospatially enabled files.
