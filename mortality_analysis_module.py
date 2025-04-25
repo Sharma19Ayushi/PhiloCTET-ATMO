@@ -44,6 +44,10 @@ def expo_ponderee_meandelta(donnees_expo, popannee):
 print('Successfully loaded mean conc command')
 
 #Function to calculate mortality_avoided 
+#Merges population, mortality, and pollution exposure datasets.#
+#Applies RR to calculate avoided deaths from concentration reductions (meandelta).#
+#Filters for ages 30–99 and distributes avoided deaths by age.#
+#Calculates total avoided deaths, years of life gained, and percent of baseline mortality avoided.#
 def mortalite_age_try(donnees_merged, donnees_expo, annee, pol):
     annee = int(annee)
     donnees_expo = donnees_expo.drop(columns='geometry', errors='ignore')
