@@ -1,3 +1,12 @@
+**Project Overview (PhiloCTET-ATMO)**
+-Project Objectives: 1. To model air pollution concentrations in various low-carbon scenarios.
+                     2. To evaluate corresponding health impacts, focusing on PM2.5 and NO2 pollutants.
+-Transition Scenarios: Developed by ADEME, these include: S1: Frugality-based reductions, S2: Collaborative territorial strategies, S3: Tech-driven approaches, S4: Reparative solutions relying on emerging technologies.
+-Methods Used: 1. Estimation of pollutant concentrations using SHERPA and CHIMERE models.
+               2. Health indicators creation based on pollution and demographic data.
+               3. Scenario analysis to compare outcomes by 2030 and 2050    
+- Importance: This project emphasizes the role of integrating health benefits into public decision-making for climate policies and aims to enhance commitment to achieving carbon neutrality in France.
+
 **Description of Python Modules :**
 **1. Population Module :** This function processes and prepares demographic, geospatial, and mortality data for further analysis and visualization. It integrates several key steps to clean, aggregate, and merge data from multiple input sources and outputs a structured dataset in the form of geospatially enabled files.
 **2. SHERPA Module :** This script processes geographic and air pollution data to generate GeoDataFrames of concentration metrics for a given pollutant and year, based on a specified scenario. It validates inputs, reshapes data, filters values using masks, and uses pollutant-specific netCDF files to map concentrations and their changes. Results are presented as spatial data points with associated coordinates, enabling further analysis or export as shapefiles.
