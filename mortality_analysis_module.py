@@ -140,7 +140,7 @@ def mortalite_age2(donnees_merged, donnees_expo, annee, pol):
         donnees_expo = donnees_expo.drop(columns='geometry')
         merged_data = pd.merge(donnees_merged, donnees_expo[['iriscod', 'meanconc', 'meandelta']], on='iriscod')
 
-        # Calculate mortality for each age
+        # Calculate mortality for each RR
         if pol == "ug_PM25_Chen":
             merged_data[f"mortpol{annee}"] = merged_data[f"mort{annee}"] - merged_data[f"mort{annee}"] * np.exp(
                 -np.log(RR_Chen) * merged_data["meandelta"] / 10)
